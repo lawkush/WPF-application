@@ -1,0 +1,95 @@
+﻿<Window x:Class="WPFFeedBackProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="606" Width="509" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="images/BG.png">
+
+        </ImageBrush>
+
+    </Window.Background>
+    <Grid RenderTransformOrigin="0.499,0.567" Margin="28,0,10,-6" Height="607" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="141*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="images/logo png .PNG" Margin="4,10,364,515" Grid.Column="2"/>
+
+        <Label Content="Name:" HorizontalAlignment="Left" Height="23" Margin="4,111,0,0" VerticalAlignment="Top" Width="95" FontWeight="Bold" Grid.Column="2" FontSize="11"/>
+        <Label Content="Mobile No.:" HorizontalAlignment="Left" Height="23" Margin="4,144,0,0" VerticalAlignment="Top" Width="95" FontWeight="Bold" Grid.Column="2" FontSize="11"/>
+        <Label Content="Date of Birth:" HorizontalAlignment="Left" Margin="4,179,0,0" VerticalAlignment="Top" Height="23" Width="95" FontWeight="Bold" Grid.Column="2" FontSize="11"/>
+        <Label Content="Suggestion/Feedback/Opinion:" HorizontalAlignment="Left" Height="30" Margin="4,208,0,0" VerticalAlignment="Top" Width="239" FontWeight="Bold" Grid.Column="2" FontSize="11"/>
+        <TextBox x:Name="first_name" HorizontalAlignment="Left" Height="20" Margin="99,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="307" Grid.Column="2" BorderThickness="0,0,0,1" OpacityMask="#FF0F0F0F">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3" Offset="0.05"/>
+                    <GradientStop Color="#FFE2E3EA" Offset="0.07"/>
+                    <GradientStop Color="#FFE3E9EF" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+
+        <TextBox x:Name="mobile" HorizontalAlignment="Left" Height="20" Margin="99,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="307" Grid.Column="2" BorderThickness="0,0,0,1"/>
+        <RichTextBox x:Name="enq_desc" HorizontalAlignment="Left" Height="33" Margin="10,238,0,0" VerticalAlignment="Top" Width="396" Grid.Column="2" BorderThickness="0,0,0,1">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Image Source="images/Black BG.png" Margin="7,306,33,231" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <DatePicker x:Name="dob" HorizontalAlignment="Left" Margin="99,180,0,0" VerticalAlignment="Top" Height="23" Width="105" Grid.Column="2" BorderThickness="0,0,0,1"/>
+        <Label Content="E-mail Id:" HorizontalAlignment="Left" Margin="209,183,0,0" VerticalAlignment="Top" Height="23" Width="63" FontWeight="Bold" Grid.Column="2" FontSize="11"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="20" Margin="272,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Grid.Column="2" BorderThickness="0,0,0,1"/>
+        <Label Content="FOOD" HorizontalAlignment="Left" Margin="0,372,0,0" VerticalAlignment="Top" Height="29" Width="107" FontWeight="Bold" Grid.Column="2" FontSize="11"/>
+        <Label Content="STAFF" HorizontalAlignment="Left" Margin="0,410,0,0" VerticalAlignment="Top" Height="25" Width="107" FontWeight="Bold" Grid.Column="2" FontSize="11"/>
+        <Label Content="RESPONSE TIME" HorizontalAlignment="Left" Margin="0,440,0,0" VerticalAlignment="Top" Height="28" Width="107" FontWeight="Bold" Grid.Column="2" FontSize="11"/>
+        <Label Content="CLEANLINESS" HorizontalAlignment="Left" Margin="0,473,0,0" VerticalAlignment="Top" Height="31" Width="107" FontWeight="Bold" Grid.Column="2" FontSize="11"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="219,373,0,0" VerticalAlignment="Top" Height="19" Width="13" Grid.Column="2"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="272,373,0,0" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="20"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="316,373,0,0" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="16"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="357,373,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.438,1.062" Grid.Column="2" Height="16" Width="16"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="219,410,0,0" VerticalAlignment="Top" Width="13" Grid.Column="2" Height="16"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="272,410,0,0" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="20"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="316,410,0,0" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="16"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="357,410,0,0" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="16"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="219,440,0,0" VerticalAlignment="Top" Width="13" RenderTransformOrigin="0.923,0.438" Grid.Column="2" Height="16"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="272,440,0,0" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="20"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="316,440,0,0" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="16"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="357,440,0,0" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="16"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="219,473,0,0" VerticalAlignment="Top" Width="13" Grid.Column="2" Height="16"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="272,473,0,0" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="20"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="316,473,0,0" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="16"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="357,473,0,0" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="16"/>
+        <Button x:Name="submitBtn" Content="Submit" HorizontalAlignment="Left" Margin="197,500,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.257,0.479" FontWeight="Bold" Click="Button_Click" Height="23" Grid.Column="2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FF0F0997" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Label Content="   Let's us serve you better!" FontFamily="vladimir script" Margin="10,62,69,0" VerticalAlignment="Top" Height="52" FontWeight="Bold" FontSize="36" FontStretch="Expanded" RenderTransformOrigin="0.632,0.533" HorizontalContentAlignment="Center" Grid.Column="2"/>
+        <Label Content="Date:" HorizontalAlignment="Left" Margin="309,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="40" Grid.Column="2" Height="26"/>
+        <Label Content="Please Tick" HorizontalAlignment="Left" Margin="99,277,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="0.5,0.269" Grid.Column="2" Height="29" Width="86" FontSize="14"/>
+        <Label Content="whenever applicable" HorizontalAlignment="Left" Margin="209,277,0,0" VerticalAlignment="Top" Width="152" FontSize="14" FontWeight="Bold" Grid.Column="2" Height="29"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="190,284,0,0" VerticalAlignment="Top" Width="17" RenderTransformOrigin="0.75,1.062" Background="#FF1679F0" Height="23" Grid.Column="2"/>
+        <Image Source="images/Thank you PNG.PNG" Margin="7,523,33,20" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Image Source="images/Art PNG.PNG" Grid.Column="2" Margin="167,572,206,0"/>
+        <Label x:Name="labeldate"  Content="" HorizontalAlignment="Left" Margin="354,10,0,0" VerticalAlignment="Top" Width="74" Grid.Column="2" Height="26"/>
+        <Button x:Name="btnClose" Content="Close" Grid.Column="2" HorizontalAlignment="Left" Margin="318,500,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnClose_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFD3270C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
